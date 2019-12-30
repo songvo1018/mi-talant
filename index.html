@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>MI TALANT</title>
+	<script src="https://kit.fontawesome.com/072d17bf2d.js" crossorigin="anonymous"></script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800,800i,900|Playfair+Display:400,900i|Poppins:300,400&display=swap"
+		rel="stylesheet" />
+
+	<link rel="stylesheet" type="text/css" href="/css/slick.css" />
+	<link rel="stylesheet" href="/css/fonts.css" />
+	<link rel="stylesheet" href="/css/media.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+	<section class="navigation">
+		<nav>
+			<div class="container">
+				<div class="navigation__inner">
+					<div class="nav__menu">
+						<div>
+							<button id="bar" onclick="barAction('nav__bar')">
+								<i class="fas fa-bars"></i>
+							</button>
+						</div>
+						<div><a>clients</a></div>
+						<div><a>news</a></div>
+					</div>
+					<div class="nav__logo">
+						MI TALANT
+					</div>
+					<div class="nav__search" id="nav__search">
+						<label for="search" class="search__input" id="search__input">
+							<!-- ADD JS CODE TO VISIBLE AFTER CLICK ON LENS -->
+							<input type="text" id="search" name="search" placeholder="Search posts" />
+							<button onclick="SomeFuncToSearch()">
+								<i class="fas fa-chevron-right"></i>
+							</button>
+						</label>
+						<button onclick="barAction('search__input')">
+							<i class="fas fa-search"></i>
+						</button>
+					</div>
+				</div>
+				<div>
+					<ul class="nav__bar" id="nav__bar">
+						<li><a val=".home">Home</a></li>
+						<li><a val=".client">Client</a></li>
+						<li><a val=".news">News</a></li>
+						<li><a val=".about">About</a></li>
+						<li><a val=".contact">Contact</a></li>
+						<!-- FUNC NOT WORKING, FINISH LATER -->
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<section class="home ">
+		<div class="container">
+			<div class="home__header">
+				<div class="header__link">
+					<label><a href="#"> <i class="fab fa-facebook-square"></i></a></label>
+					<label><a href="#"><i class="fab fa-instagram"></i></a></label>
+					<label><a href="#"><i class="fab fa-twitter"></i></a></label>
+					<label><a href="#"><i class="fab fa-youtube"></i></a></label>
+					<div class="link__date">
+						02
+						<!-- TODAY -->
+					</div>
+				</div>
+				<div class="header__title">
+					<div class="photo__down"></div>
+					<div class="photo__up"></div>
+					<div class="title">Derek Anderson</div>
+					<div class="text">british comedian</div>
+					<div class="link__profile">
+						<label>
+							<a href="#"><i class="fas fa-chevron-right"></i></a>
+						</label>
+					</div>
+				</div>
+				<div class="calendar">
+					<div class="calendar__date">
+						<label for="">
+							<a href="#" id="yesterday">01 </a>
+					<!-- TODAY - 1 -->
+						</label>
+					</div>
+					<div class="calendar__date calendar__today">
+						<label for="">
+							<a href="#" id="today">02 </a>
+					<!-- TODAY -->
+						</label>
+					</div>
+					<div class="calendar__date">
+						<label for="">
+							<a href="#" id="tomorrow">03 </a>
+					<!-- TODAY + 1-->
+						</label>
+					</div>
+					<div class="calendar__date">
+						<label for="">
+							<a href="#" id="dayAfterTomorrow">04 </a>
+					<!-- TODAY + 2-->
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="gallery__filter">
+				<div class="filter__item">
+					<button class="button" val="off" filter = "all" id="all">
+						all
+					</button>
+				</div>
+				<div class="filter__item">
+					<button class="button" val="off" filter = "actor" id="actor">
+						actor
+					</button>
+				</div>
+				<div class="filter__item">
+					<button class="button" val="off" filter = "musican" id="musican">
+						musican
+					</button>
+				</div>
+				<div class="filter__item">
+					<button class="button" val="off" filter = "comedian" id="comedian">
+						comedian
+					</button>
+				</div>
+				<div class="filter__item">
+					<button class="button" val="off" filter = "model" id="model">
+						model
+					</button>
+				</div>
+			</div>
+			<div class="model__gallery filter">
+				<div filter = "model" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Dima Ruleev</div>
+					<div class="gallery__text">actor</div>
+				</div>
+				<div filter = "musican" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">maria de la cruse</div>
+					<div class="gallery__text"> comedian</div>
+				</div>
+				<div  filter = "comedian" class="gallery__item ">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">boris vetrov</div>
+					<div class="gallery__text">Whitch</div>
+				</div>
+				<div filter = "musican" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">klara scechrov</div>
+					<div class="gallery__text">Whitcher</div>
+				</div>
+				<div filter = "musican" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div filter = "model" class="gallery__title">Nick Joe</div>
+					<div class="gallery__text">musican</div>
+				</div>
+				<div filter = "actor" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Jennyfer Eniston</div>
+					<div class="gallery__text">actor</div>
+				</div>
+				<div  filter = "comedian" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Anny Brascovic</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div filter = "musican" class="gallery__item">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Joseph Evans</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div filter = "model"  class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div  class="gallery__title">Mark O`gustas</div>
+					<div class="gallery__text">actor</div>
+				</div>
+				<div filter = "comedian" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">kSandr Capuchelli</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div filter = "actor" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">derek Anderson</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div  filter = "actor" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Stiven Morrow</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div filter = "actor" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Tina Williams</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div filter = "actor" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Phoebe Stone</div>
+					<div class="gallery__text">model</div>
+				</div>
+				<div  filter = "model" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Katya Marine</div>
+					<div class="gallery__text">model</div>
+				</div>				
+				<div  filter = "model" class="gallery__item unvisible hide">
+					<div class="gallery__link">
+						<a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
+					</div>
+					<div class="gallery__title">Tatiana Sokolova</div>
+					<div class="gallery__text">model</div>
+				</div>
+				</div>
+			</div>
+			<div class="gallery__explore">
+				<button id="explore" class="explore__btn" onclick="galleryAll()">exolore more</button>
+			</div>
+			<div class="news">
+				<div class="container">
+					<div class="news__title">
+						Latest News
+						<div class="black__line"></div>
+					</div>
+					<div class="short__news multiple-items">
+						<div class="short__item" >
+							<div class="short__item-img" id="short__item1"></div>
+							<div class="short__item-title">
+								<a href="#">
+									Sit amet consectetur, adipisicing elit, aliquid quis?
+								</a> 
+								<p>date news</span>
+							</div>
+						</div>
+						<div class="short__item" >
+							<div class="short__item-img" id="short__item2"></div>
+							<div class="short__item-title">
+								<a href="#">
+									Sit amet consectetur, adipisicing elit, aliquid quis?
+								</a> 
+								<p>date news</span>
+							</div>
+						</div>
+						<div class="short__item" >
+							<div class="short__item-img" id="short__item3"></div>
+							<div class="short__item-title">
+								<a href="#">
+									Sit amet consectetur, adipisicing elit, aliquid quis?
+								</a> 
+								<p>date news</p>
+							</div>
+						</div>
+						<div class="short__item" >
+							<div class="short__item-img" id="short__item4"></div>
+							<div class="short__item-title">
+								<a href="#">
+									Sit amet consectetur, adipisicing elit, aliquid quis?
+								</a> 
+								<p>date news</p>
+							</div>
+						</div>
+					</div>
+					<div class="news__main">
+						<div class="news__block">
+							<div class="tranding">
+								<div class="tranding__img"></div>
+								<div class="tranding__link">
+									<button id="tranding">TRANDING</button>
+								</div>
+								<div class="tranding__inner">
+									<a class="tranding__title">
+										Use Your Button
+									<p>date news</p>
+									</a>
+									
+								</div>
+							</div>
+							<div class="other">
+								<div class="popular">
+									<div class="popular__item-img" >
+										
+									</div>
+									<div class="popular__item-title">
+										<a href="#">
+											Sit amet consectetur, adipisicing?
+										</a> 
+										<p>date news</p>
+									</div>
+								</div>
+								<div class="podcast">
+									<div class="podcast__slider single-item">
+										<div class="podcast__item" id='a1'>
+											<div class="a1">
+												<a href="#">
+												<i class="fas fa-play"></i>
+												<span>Our travel podcast. Chapter 1</span>
+											</a>
+											</div>
+											</div>
+										<div class="podcast__item" id='a2'>
+											<div class="a2">
+												<a href="#">
+												<i class="fas fa-play"></i>
+												<span>Our travel podcast. Chapter 2</span>
+											</a>
+											</div>
+											</div>
+										<div class="podcast__item" id='a3'>
+											<div class="a3">
+												<a href="#">
+												<i class="fas fa-play"></i>
+												<span>Our travel podcast. Chapter 3</span>
+											</a>
+											</div>
+											</div>
+										<div class="podcast__item" id='a4'>
+											<div class="a4">
+												<a href="#">
+												<i class="fas fa-play"></i>
+												<span>Our travel podcast. Chapter 4</span>
+											</a>
+											</div>
+											</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="news__slider__inner">
+							<div class="news__slider autoplay">
+								<div class="news__slide" id="news__slide1">.</div>
+								<div class="news__slide" id="news__slide2">.</div>
+								<div class="news__slide" id="news__slide3">.</div>
+								<div class="news__slide" id="news__slide4">.</div>
+							</div>
+							<div class="slider__item-title">
+								Sit amet consectetur, blalblabla adipisicing elit, quis?
+								<p>date news</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">
+			<div class="footer__high">
+				<div class="footer__logo">
+					<div class="nav__logo">
+						MI TALANT
+					</div>
+				</div>
+				<div class="subscribe">
+					<label for="subscribe">
+						<input type="text" name="subscribe" id="subscribe" placeholder="sign up our newsletter">
+						<button onclick="subsNewsletter()">
+							<i class="far fa-envelope"></i>
+						</button>
+					</label>
+				</div>
+			</div>
+			<div class="footer__low">
+				<div class="copyright">© 2018 MI Talent. Designed by Tranmautritam for Mass Impressions.</div>
+				<div class="footer__link">
+					<label><a href="#"> <i class="fab fa-facebook-square"></i></a></label>
+					<label><a href="#"><i class="fab fa-instagram"></i></a></label>
+					<label><a href="#"><i class="fab fa-twitter"></i></a></label>
+					<label><a href="#"><i class="fab fa-youtube"></i></a></label>
+				</div>
+			</div>
+		</div>
+	</section>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="main.js"></script>
+</body>
+
+</html>
